@@ -17,9 +17,12 @@
 	"Installed": false,
 	"Modules": [
 		{
-			"Name": "LyraGame",
-			"Enabled": true
-		},
+			"Name": "CraterInventory",
+			"Type": "Runtime",
+			"LoadingPhase": "GameFeatureData"
+		}
+	],
+	"Plugins": [
 		{
 			"Name": "GameplayAbilities",
 			"Enabled": true
