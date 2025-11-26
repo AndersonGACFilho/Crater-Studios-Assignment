@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "CraterInventory",
-	"Description": "Modular integration of Elementus Inventory into Lyra Framework.",
+	"Description": "Modular integration of Elementus Inventory into the Crater Game Framework.",
 	"Category": "Game Features",
 	"CreatedBy": "Anderson",
 	"CreatedByURL": "",
@@ -19,10 +19,14 @@
 		{
 			"Name": "CraterInventory",
 			"Type": "Runtime",
-			"LoadingPhase": "GameFeatureData"
+			"LoadingPhase": "Default"
 		}
 	],
 	"Plugins": [
+		{
+			"Name": "GameFeatures",
+			"Enabled": true
+		},
 		{
 			"Name": "GameplayAbilities",
 			"Enabled": true
@@ -37,6 +41,10 @@
 		},
 		{
 			"Name": "ShooterCore",
+			"Enabled": true
+		},
+		{
+			"Name": "ElementusInventory",
 			"Enabled": true
 		}
 	],

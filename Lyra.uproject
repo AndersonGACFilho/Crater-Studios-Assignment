@@ -349,9 +349,12 @@
 			"Enabled": true
 		},
 		{
-			"Name": "SimpleInventorySystem",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/69276853b46e4f11931b80d22a9e82dd"
+			"Name": "CraterInventory",
+			"Enabled": true
+		},
+		{
+			"Name": "ElementusInventory",
+			"Enabled": true
 		}
 	],
 	"EpicSampleNameHash": "451731683"
