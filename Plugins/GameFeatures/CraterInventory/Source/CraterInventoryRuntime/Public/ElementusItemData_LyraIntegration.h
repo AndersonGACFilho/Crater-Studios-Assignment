@@ -13,15 +13,14 @@
 UCLASS(BlueprintType, Category = "Crater Inventory | Data")
 class CRATERINVENTORY_API UElementusItemData_LyraIntegration : public UElementusItemData
 {
+	GENERATED_BODY()
+
 public:
-		GENERATED_BODY()
-protected:
 	// Soft reference to a Lyra Inventory Item Definition
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadOnly,
 		Category = "Crater Inventory | Lyra Integration"
-		)
+	)
 	TSoftClassPtr<class ULyraInventoryItemDefinition> LyraItemDefinition;
-		
 };
