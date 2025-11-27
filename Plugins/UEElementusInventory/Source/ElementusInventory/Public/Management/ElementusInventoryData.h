@@ -121,7 +121,7 @@ struct FElementusItemInfo
 };
 
 UCLASS(NotBlueprintable, NotPlaceable, Category = "Elementus Inventory | Classes | Data")
-class ELEMENTUSINVENTORY_API UElementusItemData final : public UPrimaryDataAsset
+class ELEMENTUSINVENTORY_API UElementusItemData : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
 
