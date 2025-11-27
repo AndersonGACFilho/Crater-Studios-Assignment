@@ -16,6 +16,13 @@ class CRATERINVENTORY_API UElementusItemData_LyraIntegration : public UElementus
 	GENERATED_BODY()
 
 public:
+	/**
+	 * @brief Constructor
+	 * @param ObjectInitializer The object initializer
+	 */
+	UElementusItemData_LyraIntegration(const FObjectInitializer& ObjectInitializer);
+
+
 	// Soft reference to a Lyra Inventory Item Definition
 	UPROPERTY(
 		EditAnywhere,
