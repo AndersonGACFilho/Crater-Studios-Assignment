@@ -1,4 +1,5 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
+// Modified by Crater Studios for inventory bridge integration.
 
 #pragma once
 
@@ -18,7 +19,7 @@ struct FGameplayTag;
  * ULyraInventoryItemInstance
  */
 UCLASS(BlueprintType)
-class ULyraInventoryItemInstance : public UObject
+class LYRAGAME_API ULyraInventoryItemInstance : public UObject
 {
 	GENERATED_BODY()
 
@@ -59,14 +60,14 @@ public:
 		return (ResultClass*)FindFragmentByClass(ResultClass::StaticClass());
 	}
 
+	void SetItemDef(TSubclassOf<ULyraInventoryItemDefinition> InDef);
 private:
 #if UE_WITH_IRIS
 	/** Register all replication fragments */
 	virtual void RegisterReplicationFragments(UE::Net::FFragmentRegistrationContext& Context, UE::Net::EFragmentRegistrationFlags RegistrationFlags) override;
 #endif // UE_WITH_IRIS
 
-	void SetItemDef(TSubclassOf<ULyraInventoryItemDefinition> InDef);
-
+	// Allow FLyraInventoryList to access private members (original Lyra behavior)
 	friend struct FLyraInventoryList;
 
 private:
