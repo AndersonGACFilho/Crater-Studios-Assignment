@@ -1,5 +1,3 @@
-// Copyright Crater Studios Assignment. All Rights Reserved.
-
 using UnrealBuildTool;
 
 public class CraterInventory : ModuleRules
@@ -12,23 +10,23 @@ public class CraterInventory : ModuleRules
 			new string[]
 			{
 				"Core",
-				"LyraGame",
-				"ModularGameplay",    
-				"CommonGame",
+				"CoreUObject",
+				"Engine",
+				"NetCore",
 				"ElementusInventory",
 				"GameplayTags",
-				"GameplayAbilities"
+				"GameplayAbilities",
+				"LyraGame",
+				"GameFeatures",
+				"ModularGameplay"
 			}
 		);
 
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"CoreUObject",
-				"Engine",
 				"Slate",
 				"SlateCore",
-				"NetCore",
 				"DeveloperSettings",
 				"CommonUI",
 				"UMG"

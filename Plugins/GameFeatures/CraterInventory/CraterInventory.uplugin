@@ -15,6 +15,10 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+	"AdditionalDependencies": [
+		"LyraGame",
+		"ElementusInventory"
+	],
 	"Modules": [
 		{
 			"Name": "CraterInventory",

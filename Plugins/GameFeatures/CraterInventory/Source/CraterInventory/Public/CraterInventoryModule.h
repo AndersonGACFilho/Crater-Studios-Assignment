@@ -1,5 +1,3 @@
-// Copyright Crater Studios Assignment. All Rights Reserved.
-
 #pragma once
 
 #include "Modules/ModuleManager.h"

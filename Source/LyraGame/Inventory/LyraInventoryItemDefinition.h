@@ -29,7 +29,7 @@ public:
  * ULyraInventoryItemDefinition
  */
 UCLASS(Blueprintable, Const, Abstract)
-class ULyraInventoryItemDefinition : public UObject
+class LYRAGAME_API ULyraInventoryItemDefinition : public UObject
 {
 	GENERATED_BODY()
 
@@ -48,7 +48,7 @@ public:
 
 //@TODO: Make into a subsystem instead?
 UCLASS()
-class ULyraInventoryFunctionLibrary : public UBlueprintFunctionLibrary
+class LYRAGAME_API ULyraInventoryFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
