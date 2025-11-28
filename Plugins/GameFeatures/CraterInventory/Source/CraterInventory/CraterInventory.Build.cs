@@ -16,7 +16,9 @@ public class CraterInventory : ModuleRules
 				"ElementusInventory",
 				"GameplayTags",
 				"GameplayAbilities",
-				"LyraGame"
+				"LyraGame",
+				"GameFeatures",
+				"ModularGameplay"
 			}
 		);
 
